@@ -606,8 +606,16 @@ video {
   align-items: center;
 }
 
+.justify-end {
+  justify-content: flex-end;
+}
+
 .justify-center {
   justify-content: center;
+}
+
+.gap-5 {
+  gap: 1.25rem;
 }
 
 .rounded-lg {
@@ -617,6 +625,11 @@ video {
 .bg-gray-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+}
+
+.bg-black {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-35 {
@@ -654,14 +667,13 @@ video {
   line-height: 1;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
-}
-
-.text-black {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .backdrop-blur-2xl {
@@ -712,10 +724,22 @@ video {
   border-radius: 0.5rem;
 }
 
-.before\:bg-yellow-500::before {
+.before\:bg-amber-500::before {
   content: var(--tw-content);
   --tw-bg-opacity: 1;
-  background-color: rgb(234 179 8 / var(--tw-bg-opacity));
+  background-color: rgb(245 158 11 / var(--tw-bg-opacity));
+}
+
+.before\:bg-sky-500::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 165 233 / var(--tw-bg-opacity));
+}
+
+.before\:bg-sky-600::before {
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(2 132 199 / var(--tw-bg-opacity));
 }
 
 .after\:absolute::after {
@@ -726,6 +750,11 @@ video {
 .after\:-bottom-5::after {
   content: var(--tw-content);
   bottom: -1.25rem;
+}
+
+.after\:-bottom-8::after {
+  content: var(--tw-content);
+  bottom: -2rem;
 }
 
 .after\:-right-24::after {
@@ -741,11 +770,6 @@ video {
 .after\:left-2\/4::after {
   content: var(--tw-content);
   left: 50%;
-}
-
-.after\:-bottom-8::after {
-  content: var(--tw-content);
-  bottom: -2rem;
 }
 
 .after\:-z-10::after {
@@ -789,24 +813,6 @@ video {
 .after\:font-bold::after {
   content: var(--tw-content);
   font-weight: 700;
-}
-
-.after\:text-black::after {
-  content: var(--tw-content);
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.after\:text-orange-800::after {
-  content: var(--tw-content);
-  --tw-text-opacity: 1;
-  color: rgb(154 52 18 / var(--tw-text-opacity));
-}
-
-.after\:text-orange-900::after {
-  content: var(--tw-content);
-  --tw-text-opacity: 1;
-  color: rgb(124 45 18 / var(--tw-text-opacity));
 }
 
 .after\:text-gray-800::after {
