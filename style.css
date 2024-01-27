@@ -1,0 +1,10 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.gradient-text {
+  background-image: linear-gradient(to top right, #fff, #f6e05e, #f6ad55, #f68741, #ed8936);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
